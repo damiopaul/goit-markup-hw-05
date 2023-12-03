@@ -553,9 +553,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .callback-form-field-input:focus {
     border-color: #4D5AE5;
 }
-.callback-form-input-wrapper
-+ .callback-form-field-input:focus
->.callback-form-field-icon {
+.callback-form-field-input:focus
+> .callback-form-field-icon {
     fill: #4D5AE5;
     border-color: #4D5AE5;
 }
@@ -612,7 +611,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .privacy-policy-icon {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.user-privacy-input:checked + .use-privacy-label > .user-privacy-span {
+
+.user-privacy-input:checked
++ .user-privacy-label
+> .user-privacy-span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
