@@ -414,7 +414,7 @@
           Subscribe
         </p>
         <form class="footer-form">
-          <label for="" class="footer-form-label">
+          <label class="footer-form-label">
             <input type="email" class="footer-form-input" name="subscription" placeholder="E-mail">
           </label>
           <button type="submit" class="footer-subscribe-button">
@@ -453,7 +453,7 @@
                 <svg class="callback-form-field-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
-              </input>
+              
               </div>
             
           </div>
@@ -465,7 +465,7 @@
                 <svg class="callback-form-field-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-                </input>
+                
               </div>
             
           </div>
@@ -477,7 +477,7 @@
                 <svg class="callback-form-field-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
-                </input>
+               
               </div>
             
           </div>
@@ -492,7 +492,8 @@
               </textarea>
                            
             </div>
-            <div class="privacy-policy">
+            <div class="privacy-policy">              
+              <input class="user-privacy-input visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy">
               <label class="user-privacy-label" for="user-privacy">I accept the terms and conditions of the
                 <span class="user-privacy-span">
                   <svg class="privacy-policy-icon" width="10" height="8">
@@ -501,8 +502,6 @@
                 </span>
                 <a href="" class="privacy-policy-link">Privacy Policy</a>
               </label>
-              <input class="user-privacy-input visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy">
-              
             </div>
             <button type="submit" class="form-submit-button">Send</button>
         </form>
