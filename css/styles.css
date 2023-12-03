@@ -397,6 +397,9 @@ body {
 .footer-link:focus {
     background-color: #31d0aa;
 }
+.footer-form-container {
+    padding: 80px;
+}
 .footer-form {
     display: flex;
     gap: 24px;
