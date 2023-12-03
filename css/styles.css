@@ -547,13 +547,22 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     outline: transparent;
     background-color: transparent;
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+}
+.callback-form-field-icon:focus {
+    border-color: #4D5AE5;
+    fill: #4D5AE5;
+}
+.callback-form-field-icon:focus>.callback-form-field-icon {
+    fill: #4D5AE5;
 }
 .callback-form-field-icon {
     position: absolute;
     left: 16px;
-    top: 11px;
-    stroke: #000000;
+    top: 50%;
+    transform: translateY(-50%) ;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .callback-form-comment {
@@ -561,4 +570,63 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     height: 120px;
     border-radius: 4px;
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.callback-form-comment:focus {
+    border-color: #4D5AE5;
+}
+.callback-form-field-comment-wrapper {
+    margin-bottom: 16px;
+}
+.privacy-policy {
+    margin-bottom: 24px;
+}
+.use-privacy-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8e8f99;
+}
+.user-privacy-span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+.user-privacy-input:checked + .use-privacy-label > .user-privacy-span {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+.privacy-policy-link {
+    color: #4d5ae5;
+}
+.form-submit-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
 }
